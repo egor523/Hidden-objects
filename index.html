@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hidden object</title>
+	<style type="text/css">
+		.bg{
+			height:600px;
+			width:1000px;
+			background:red;
+			margin-right:200px;
+			margin-left:250px;
+		}
+		.tb{
+			background-color:orange;
+			height:200px;
+			width:100px;
+			margin-right:10px;
+		}
+		.babijon{
+			height:50px;
+			width:50px;
+			position:absolute;
+			left: 1420px;
+			top: 460px;
+			
+		}
+		.pablo{
+			height:50px;
+			width:50px;
+			position:absolute;
+			left: 1335px;
+			top: 670px;
+		}
+		.book{
+			height:50px;
+			width:50px;
+			position:absolute;
+			left: 500px;
+			top: 620px;
+		}
+		.zoos{
+			height:50px;
+			width:50px;
+			position:absolute;
+			left: 390px;
+			top: 272px;	
+		}
+		.bill{
+			height:50px;
+			width:50px;
+			position:absolute;
+			left: 890px;
+			top: 272px;	
+			
+		}
+		
+	</style>
+</head>
+<body style="background-image: url(1.jpg);background-size:cover;">
+	<div class="tb">
+		<h4 class="textbabijon">  1.Бабиджон</h4>
+		<h4 class="textbook">	2.Книга Диппера</h4>
+		<h4 class="textzoos">	3.Зус</h4>
+		<h4 class="textbill">	4.Билл</h4>
+		<h4 class="textpablo">	5.Пабло</h4>
+	</div>
+	
+	<img class="babijon" src="бабиджон.jpg">
+	<img class="bill" src="bill.png">	
+	<img class="zoos" src="zoos.png">
+	<img class="book" src="book.png">
+	<img class="pablo" src="пабло.png">
+	
+	<script>
+		let babijon = document.querySelector(".babijon")
+		let book = document.querySelector(".book")
+		let zoos = document.querySelector(".zoos")
+		let pablo = document.querySelector(".pablo")
+		let bill = document.querySelector(".bill")
+		let score = 0;
+		if (score == 5 ){
+		alert("Молодец ты прошел")	
+		}
+
+
+		babijon.onclick = function(){
+		alert("Класс ты нашел БАБИДЖОНА")
+		babijon.style.display = "none"
+		document.querySelector(".textbabijon").style.textDecoration = "line-through"
+		score = score + 1;
+		if (score == 5 ){
+		alert("ты победил")	
+		}
+		}
+		book.onclick = function(){
+		alert("Класс ты нашел Книгу Диппера")	
+		book.style.display = "none"
+		document.querySelector(".textbook").style.textDecoration = "line-through"
+		score = score + 1;
+		if (score == 5 ){
+		alert("ты победил")	
+		}
+		}
+		zoos.onclick = function(){
+		alert("Класс ты нашел Зуса")	
+		zoos.style.display = "none"
+		document.querySelector(".textzoos").style.textDecoration = "line-through"
+		score = score + 1;
+		if (score == 5 ){
+		alert("ты победил")	
+		}
+		}
+		bill.onclick = function(){
+		alert("Класс ты нашел Билла")	
+		bill.style.display = "none"
+		document.querySelector(".textbill").style.textDecoration = "line-through"
+		score = score + 1;
+		if (score == 5 ){
+		alert("ты победил")	
+		}
+		}
+		
+		pablo.onclick = function(){
+		alert("Класс ты нашел ПАБЛО!!!")	
+		pablo.style.display = "none"
+		document.querySelector(".textpablo").style.textDecoration = "line-through"
+		score = score + 1;
+		if (score == 5 ){
+		alert("ты победил")	
+		}
+		}
+	</script>
+</body>
+</html>
